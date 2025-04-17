@@ -26,7 +26,10 @@ Quando ele indicar no "git status" que "No commits yet" significa que nenhum com
 	-> "git commit" é o comando para gerar um commit para que seja adicionado ao seu projetp.
 	-> "-m" é o comando para que configurar uma mensagem ao seu commit. Use isso para como boa prática, 	até para conseguir compreender o que foi feito no momento da criação do seu commit.
 
-Nova linha 
+"git commit -a -m "<nome da versão>"
+	-> Desta forma fazemos uma adição dos arquivos sem precisar fazer "git add .". Assim, você adiciona todos as mudanças e faz o commit com o nome da versão que você especificar.
+
+
 
 
 
