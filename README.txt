@@ -31,6 +31,20 @@ Quando ele indicar no "git status" que "No commits yet" significa que nenhum com
 
 
 
+git config --global --list
+	-> Serve para listar os usuários globais cadastrados.
+
+git config --global user.name "<nome do usuário"
+	-> Serve para cadastrar o nome do usuário global
+
+git config --global user.email "<seu email aqui">
+	-> Serve para cadastrar o email do usuário global
+
+git config user.name "<nome>" & git config user.email "<email>"
+	-> Serve para cadastrar o nome e email do usuário local.
+
+
+
 
 
 
