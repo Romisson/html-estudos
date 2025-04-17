@@ -43,6 +43,39 @@ git config --global user.email "<seu email aqui">
 git config user.name "<nome>" & git config user.email "<email>"
 	-> Serve para cadastrar o nome e email do usuário local.
 
+* Subir o repositório local para o remoto
+git push
+	-> Ao inicializar a primeira vez, o git bash vai pedir para configurar o repositório remoto (GitHub):
+
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+Para isso, vá em GitHub e abra sua conta lá. Senão tiver um repositório já criado, crie um: clicando em + e create new repositor.
+
+Após criar, basta copiar o url e ir em git bash digitar:
+	"git remote add origin <url>"
+
+Agora que foi definido o repositório local do projeto, use o comando "git push"
+Óbvio que ele não irá executar corretamente. Afinal, não definimos uma branch para onde nosso projeto será carregado. Vamos fazer isso agora. Mas antes, veja a mensagem que ele exibiu ao digitar o comando git push:
+	$ git push
+	fatal: The current branch master has no upstream branch.
+	To push the current branch and set the remote as upstream, use
+
+	    git push --set-upstream origin master
+
+	To have this happen automatically for branches without a tracking
+	upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Agora, se você quer que a branch onde será enviada seja a branch master, basta digitar o código que o erro acima sugeriu: 
+	git push --set-upstream origin master
+
 
 
 
